@@ -405,7 +405,7 @@ nav .menu.active .bar {
   animation-delay: 4.7s;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .timeline {
       margin: 50px auto;
   }
