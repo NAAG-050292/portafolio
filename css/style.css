@@ -284,7 +284,7 @@ nav .menu.active .bar {
   gap: 1rem;
 
   position: relative;
-  max-width: 1000px;
+  max-width: 1250px;
   margin: 50px auto;
 }
 @keyframes movedown {
@@ -311,6 +311,8 @@ nav .menu.active .bar {
 }
 
 .subtitle {
+  justify-items: start;
+
   font-family: var(--font-rounded);
   font-size: 3rem;
   font-weight: var(--f-bold);
@@ -478,9 +480,9 @@ nav .menu.active .bar {
   
   .timeline {
   
-    position: relative;
-    max-width: 1000px;
-    margin: 100px auto;
+    /* position: relative; */
+    /* max-width: 1000px; */
+    margin: 100px 160px;
   }
 
   .text_box {
