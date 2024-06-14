@@ -141,7 +141,7 @@ nav .menu.active .bar {
 /* Main */
 
 .home {
-  padding-top: 3.1rem;
+  padding: 6.1rem 0;
   display: grid;
   gap: 2.5rem;
 }
@@ -253,10 +253,19 @@ nav .menu.active .bar {
 }
 
 .picture_img {
-  width: 80%;
+  width: 85%;
   display: block;
   max-width: 400px;
   border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid gainsboro;
+  box-shadow: 0 0 10px gray;
+  transition: 0.4s ease;
+}
+
+.picture_img:hover {
+  transform: scale(1);
+  box-shadow: 0 0 30px gray;
 }
 
 /* Timeline */
