@@ -280,18 +280,25 @@ nav .menu.active .bar {
 /* Timeline */
 
 .container {
-  padding: 10px 50px;
+  /* padding: 10px 50px;
   position: relative;
-  width: 50%;
+  width: 50%; */
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 25px;
 
   animation: movedown 1s linear forwards;
   opacity: 0;
 }
 
 .timeline {
+  display: grid;
+  gap: 1rem;
+
   position: relative;
   max-width: 1000px;
-  margin: 100px auto;
+  /* margin: 100px auto; */
+  margin: 50px auto;
 }
 @keyframes movedown {
   0% {
@@ -305,11 +312,15 @@ nav .menu.active .bar {
 }
 
 .text_box {
+  display: grid;
+  gap: 1rem;
+
   padding: 20px 30px;
   background: #fff;
   position: relative;
   border-radius: 6px;
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-size: 13px;
 }
 
 .left_container {
@@ -317,7 +328,8 @@ nav .menu.active .bar {
 }
 
 .right_container {
-  left: 50%;
+  left: 0;
+  /* left: 50%; */
 }
 
 .icon {
@@ -329,8 +341,13 @@ nav .menu.active .bar {
   z-index: 10;
 }
 
+.icon:hover {
+  /* transform: scale(1); */
+}
+
+.icon_left,
 .icon_right {
-  left: -20px;
+  left: 10px;
 }
 
 .timeline::after {
@@ -341,7 +358,8 @@ nav .menu.active .bar {
   background: #fff;
   border-radius: 5px;
   top: 0;
-  left: 50%;
+  /* left: 50%; */
+  left: 31px;
   margin-left: -3px;
   z-index: -1;
   animation: moveline 6s linear forwards;
@@ -356,8 +374,43 @@ nav .menu.active .bar {
 }
 
 .title {
-  font-weight: 600;
-  letter-spacing: 1.5px;
+  font-weight: var(--f-bold);
+  letter-spacing: 1px;
+}
+
+.fecha {
+  font-weight: var(--f-medium);
+  font-family: var(--font-rounded);
+}
+
+.paragaph {
+  font-family: var(--font-rounded);
+  font-weight: var(--f-light);
+}
+
+.list {
+  list-style: none;
+  position: relative;
+  margin: 5px 0;
+  left: 10px;
+}
+
+.list::before {
+  content: '';
+  height: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  z-index: 1;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #000;
+  /* border-left: 0; */
+  /* border-right: 15px solid #fff; */
+  /* right: -13px; */
+  /* left: -13px; */
+  margin-top: 4px;
 }
 
 .text_box {
@@ -373,8 +426,11 @@ nav .menu.active .bar {
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 15px solid #fff;
-  right: -13px;
+  /* border-left: 15px solid #fff; */
+  border-left: 0;
+  border-right: 15px solid #fff;
+  /* right: -13px; */
+  left: -13px;
 }
 
 .right_container_arrow {
@@ -406,43 +462,62 @@ nav .menu.active .bar {
 }
 
 @media (min-width: 768px) {
-  .timeline {
-      margin: 50px auto;
-  }
-
-  .timeline::after {
-      left: 31px;
-  }
-
   .container {
-      width: 100%;
-      padding-left: 80px;
-      padding-right: 25px;
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+  }
+  
+  .timeline {
+  
+    position: relative;
+    max-width: 1000px;
+    margin: 100px auto;
   }
 
   .text_box {
-      font-size: 13px;
+    font-size: 15px;
   }
-
-  .text_box small {
-      margin-bottom: 10px;
+  
+  .left_container {
+    left: 0;
   }
-
+  
   .right_container {
-      left: 0;
+    left: 50%;
   }
 
-  .icon_left,
-  .icon_rigth {
-      left: 10px;
-  }
+  .icon_left {
+  left: 96%;
+}
 
-  .left_container_arrow,
-  .right_container_arrow {
-      border-right: 15px solid #fff;
-      border-left: 0;
-      left: -13px;
-  }
+.icon_right {
+  left: -20px;
+}
+
+.timeline::after {
+  left: 50%;
+}
+
+.left_container_arrow {
+  left: 100%;
+  border-right: 0;
+  border-left: 15px solid #fff;
+
+}
+
+.right_container_arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #fff;
+  left: -13px;
+}
+
 
 }
 
