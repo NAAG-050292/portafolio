@@ -271,9 +271,6 @@ nav .menu.active .bar {
 /* Timeline */
 
 .container {
-  /* padding: 10px 50px;
-  position: relative;
-  width: 50%; */
   width: 100%;
   padding-left: 80px;
   padding-right: 25px;
@@ -288,7 +285,6 @@ nav .menu.active .bar {
 
   position: relative;
   max-width: 1000px;
-  /* margin: 100px auto; */
   margin: 50px auto;
 }
 @keyframes movedown {
@@ -312,6 +308,31 @@ nav .menu.active .bar {
   border-radius: 6px;
   /* font-size: 15px; */
   font-size: 13px;
+}
+
+.subtitle {
+  font-family: var(--font-rounded);
+  font-size: 3rem;
+  font-weight: var(--f-bold);
+  margin-bottom: 1.5rem;
+  letter-spacing: 1.5px;
+
+  background: linear-gradient(
+        to right,
+        #004aad 20%,
+        #38b6ff 40%,
+        #38b6ff 60%,
+        #004aad 80%
+    );
+    background-size: 200%;
+    color: transparent;
+    background-clip: text;
+    animation: shine 6s linear infinite;
+}
+@keyframes shine {
+  to {
+      background-position: 200% center;
+  }
 }
 
 .left_container {
@@ -360,21 +381,26 @@ nav .menu.active .bar {
 }
 
 .title {
+  color: rgb(15, 23, 42);
   font-weight: var(--f-bold);
   letter-spacing: 1px;
 }
 
 .fecha {
+  color: rgb(15, 23, 42);
   font-weight: var(--f-medium);
   font-family: var(--font-rounded);
 }
 
 .paragaph {
+  color: rgb(15, 23, 42);
   font-family: var(--font-rounded);
   font-weight: var(--f-light);
 }
 
 .list {
+  color: rgb(15, 23, 42);
+  font-weight: var(--f-light);
   list-style: none;
   position: relative;
   margin: 5px 0;
@@ -392,11 +418,7 @@ nav .menu.active .bar {
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   border-left: 5px solid #000;
-  /* border-left: 0; */
-  /* border-right: 15px solid #fff; */
-  /* right: -13px; */
-  /* left: -13px; */
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .text_box {
