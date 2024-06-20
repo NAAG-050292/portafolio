@@ -31,7 +31,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .contenedor {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1450px;
   margin: 0 auto;
   overflow: hidden;
   }
@@ -46,7 +46,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .nav {
   width: 100%;
   /* height: 100%; */
-  padding: 1rem 1.5rem;
+  padding: 1rem 4.5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -152,6 +152,10 @@ nav .menu.active .bar {
   padding: 6.1rem 0;
   display: grid;
   gap: 2.5rem;
+
+  transform: rotateY(0) translate(0, 0);
+  scale: 1;
+  /* opacity: 0; */
 }
 
 .info_left {
@@ -159,6 +163,13 @@ nav .menu.active .bar {
   gap: .5rem;
   justify-items: center;
   /* text-align: center; */
+
+  transition: 0.8s ease-in-out;
+  transform: rotateY(-90deg) translate(-120vw, 0);
+  scale: 0.3;
+  /* opacity: 1; */
+
+  filter: drop-shadow(-6px 6px 1px #000000cc);
 }
 
 .info_title {
