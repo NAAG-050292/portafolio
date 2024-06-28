@@ -290,6 +290,27 @@ nav .menu.active .bar {
   transition: 0.4s ease;
 }
 
+.circle-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 100%;
+  height: 120%;
+  border-radius: 50%;
+  border-top: .2rem solid var(--bgc-color-body);
+  border-bottom: .2rem solid var(--bgc-color-body);
+  border-left: .2rem solid var(--bgc-color-celeste);
+  border-right: .2rem solid var(--bgc-color-celeste);
+  animation: circle-spin 8s linear infinite;
+}
+
+@keyframes circle-spin {
+  100% {
+    /* transform: translate(-50%, -50%) rotate(360deg); */
+  }
+}
+
 .picture_img:hover {
   /* transform: scale(1);
   box-shadow: 0 0 30px gray; */
