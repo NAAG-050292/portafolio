@@ -272,6 +272,7 @@ nav .menu.active .bar {
 
 .image_right {
   position: relative;
+  margin-top: 50px;
 }
 
 .right_picture {
@@ -280,13 +281,12 @@ nav .menu.active .bar {
 }
 
 .picture_img {
-  width: 85%;
-  display: block;
+  width: 75%;
+  /* display: block; */
   max-width: 400px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid gainsboro;
-  box-shadow: 0 0 10px gray;
   transition: 0.4s ease;
 }
 
@@ -295,19 +295,19 @@ nav .menu.active .bar {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0);
-  width: 100%;
-  height: 120%;
+  width: 85%;
+  height: 115%;
   border-radius: 50%;
   border-top: .2rem solid var(--bgc-color-body);
   border-bottom: .2rem solid var(--bgc-color-body);
-  border-left: .2rem solid var(--bgc-color-celeste);
-  border-right: .2rem solid var(--bgc-color-celeste);
+  border-left: .1rem solid gray;
+  border-right: .1rem solid gray;
   animation: circle-spin 8s linear infinite;
 }
 
 @keyframes circle-spin {
   100% {
-    /* transform: translate(-50%, -50%) rotate(360deg); */
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
@@ -719,6 +719,27 @@ nav .menu.active .bar {
   .nav_list.active {
     left: 0%;
   } */
+
+  .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 85%;
+    height: 110%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--bgc-color-body);
+    border-bottom: .2rem solid var(--bgc-color-body);
+    border-left: .1rem solid gray;
+    border-right: .1rem solid gray;
+    animation: circle-spin 8s linear infinite;
+  }
+  
+  @keyframes circle-spin {
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
 
   .nav_footer {
     display: none;
