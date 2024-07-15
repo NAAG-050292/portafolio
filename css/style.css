@@ -279,6 +279,11 @@ nav .menu.active .bar {
 .image_right {
   position: relative;
   margin-top: 50px;
+  animation: aniimg 10s;
+}
+@keyframes aniimg {
+  0% { margin-top: 100%; width: 100%;}
+  100% { margin-top: 0%; width: 100%;}
 }
 
 .right_picture {
@@ -631,6 +636,16 @@ nav .menu.active .bar {
   @keyframes animtxt {
     0% { margin-left: 100%; width: 100%;}
     100% { margin-left: 0; width: 100%;}
+  }
+
+  .image_right {
+    /* position: relative;
+    margin-top: 50px; */
+    animation: aniimg 4s;
+  }
+  @keyframes aniimg {
+    0% { margin-top: 100%; width: 100%;}
+    100% { margin-top: 0%; width: 100%;}
   }
 
   .name {
