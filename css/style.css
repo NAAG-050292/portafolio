@@ -276,6 +276,44 @@ nav .menu.active .bar {
   color: white;
 }
 
+/* Animando Texto */
+.info_title, .name, .design, .info_paragraph, .botton {
+  opacity: 0;
+  animation: anitext 0.5s 1s ease-in-out 1 forwards;
+}
+@keyframes anitext {
+  from {
+    transform: translateY(-30px);
+    filter: blur(10px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.info_title {
+  animation-delay: 1.2s;
+}
+
+.name {
+  animation-delay: 1.4s;
+}
+
+.design {
+  animation-delay: 1.6s;
+}
+
+.info_paragraph {
+  animation-delay: 1.8s;
+}
+
+.botton {
+  animation-delay: 2s;
+}
+
+
 .image_right {
   position: relative;
   margin-top: 50px;
